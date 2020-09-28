@@ -106,16 +106,16 @@ suit_switcher = {
     "Spade.png": Suits.Spade,
 }
 
-CUTOFF_OPEN_UNSUIT = [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 3, 7]  # 25
-CUTOFF_OPEN_SUIT =   [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 2, 3, 7]  # 25
+CUTOFF_OPEN_UNSUIT = [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 3, 7]  # 30
+CUTOFF_OPEN_SUIT =   [1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 4, 5]  # 30
 
-DEALER_OPEN_UNSUIT = [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 3, 7]  # 30
-DEALER_OPEN_SUIT =   [1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 4, 5]  # 30
+DEALER_OPEN_UNSUIT = [1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 4, 5]  # 35
+DEALER_OPEN_SUIT =   [1, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 7, 1]  # 35
 
 DEALER_DEFEND_UNSUIT = [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 5]  # 10
 DEALER_DEFEND_SUIT =   [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 2, 4]  # 10
 
-SMALLBLIND_OPEN_UNSUIT = [1, 0, 0, 0, 0, 0, 0, 1, 1, 2, 6, 1, 1]  # 60      <- FROM 50%
+SMALLBLIND_OPEN_UNSUIT = [1, 0, 0, 0, 0, 0, 0, 1, 1, 2, 6, 1, 1]  # 60   <- FROM 50%
 SMALLBLIND_OPEN_SUIT =   [1, 0, 0, 1, 1, 0, 1, 1, 2, 3, 1, 1, 1]  # 60
 
 SMALLBLIND_DEFEND_CUTOFF_UNSUIT = [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 2, 4]  # 15
@@ -124,26 +124,26 @@ SMALLBLIND_DEFEND_CUTOFF_SUIT =   [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 3, 6]  # 15
 SMALLBLIND_DEFEND_DEALER_UNSUIT = [0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 3, 5]  # 20
 SMALLBLIND_DEFEND_DEALER_SUIT =   [0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 2, 2, 8]  # 20
 
-SMALLBLIND_DEFEND_TWO_UNSUIT = [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 2]  # 10  -> CAHNGED TO 5   TODONE: TRANSFER TO TOP 5 PERCENT PER 2 PLAYERS
-SMALLBLIND_DEFEND_TWO_SUIT =   [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 3]  # 10  -> CAHNGED TO 5
+SMALLBLIND_DEFEND_TWO_UNSUIT = [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 2, 3]  # 15  <- from 10 per 2
+SMALLBLIND_DEFEND_TWO_SUIT =   [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 2, 2, 5]  # 15
 
-BIGBLIND_DEFEND_CUTOFF_UNSUIT = [0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 3, 5]  # 25  -> CHANGED TO 20
-BIGBLIND_DEFEND_CUTOFF_SUIT =   [0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 2, 2, 8]  # 25  -> CHANGED TO 20
+BIGBLIND_DEFEND_CUTOFF_UNSUIT = [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 3, 7]  # 25  <- from 25
+BIGBLIND_DEFEND_CUTOFF_SUIT =   [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 2, 3, 7]  # 25
 
 BIGBLIND_DEFEND_DEALER_UNSUIT = [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 3, 7]  # 25
 BIGBLIND_DEFEND_DEALER_SUIT =   [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 2, 3, 7]  # 25
 
-BIGBLIND_DEFEND_SMALLBLIND_UNSUIT = [1, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 5, 3]  # 35   -> CAHNGED TO 40
-BIGBLIND_DEFEND_SMALLBLIND_SUIT =   [1, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 5, 1]  # 35   -> CHANGED TO 40
+BIGBLIND_DEFEND_SMALLBLIND_UNSUIT = [1, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 5, 3]  # 40  <- from 35
+BIGBLIND_DEFEND_SMALLBLIND_SUIT =   [1, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 5, 1]  # 40  <-
 
-BIGBLIND_DEFEND_TWO_CUTOFF_DEALER_UNSUIT = [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 2, 3]  # 15        TODONE: TRANSFER TO TOP 15 PERCENT PER 2 PLAYERS
-BIGBLIND_DEFEND_TWO_CUTOFF_DEALER_SUIT =   [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 2, 2, 5]  # 15
+BIGBLIND_DEFEND_TWO_CUTOFF_DEALER_UNSUIT = [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 3]  # 10 per 2
+BIGBLIND_DEFEND_TWO_CUTOFF_DEALER_SUIT =   [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 2, 4]  # 10 per 2
 
-BIGBLIND_DEFEND_TWO_CUTOFF_SMALLBLIND_UNSUIT = [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 3]  # 10     TODONE: TRANSFER TO TOP 10 PERCENT PER 2 PLAYERS
+BIGBLIND_DEFEND_TWO_CUTOFF_SMALLBLIND_UNSUIT = [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 3]  # 10
 BIGBLIND_DEFEND_TWO_CUTOFF_SMALLBLIND_SUIT =   [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 2, 4]  # 10
 
-BIGBLIND_DEFEND_TWO_SMALLBLIND_DEALER_UNSUIT = [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 3]  # 10     TODONE: TRANSFER TO TOP 10 PERCENT PER 2 PLAYERS
-BIGBLIND_DEFEND_TWO_SMALLBLIND_DEALER_SUIT =   [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 2, 4]  # 10
+BIGBLIND_DEFEND_TWO_SMALLBLIND_DEALER_UNSUIT = [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 2, 3]  # 15 per 2
+BIGBLIND_DEFEND_TWO_SMALLBLIND_DEALER_SUIT =   [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 2, 2, 5]  # 15
 
 BIGBLIND_DEFEND_THREE_UNSUIT = [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 2]  # 5             TODO: TRANSFER TO TOP 10 PERCENT PER 2 PLAYERS
 BIGBLIND_DEFEND_THREE_SUIT =   [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 3]  # 5
@@ -184,7 +184,6 @@ class PreviousAction(Enum):
     ThreeRaise = 6
 
 
-
 class Table:
     processing_idle = True
 
@@ -204,15 +203,15 @@ class Table:
         self.curr_position_action_mapping = dict()
 
         self.previous_action = -1
+        self.curr_action = Action.UnDecided
 
         self.waiting_for_my_turn = False
+        self.acted = True
 
         self.card_a = None
         self.card_b = None
 
         self.screen_shot = None
-
-        self.curr_action = Action.UnDecided
 
         self.top_left_x_cor = coordinates[0]
         self.top_left_y_cor = coordinates[1]
@@ -221,6 +220,8 @@ class Table:
 
         self.x_length = self.bottom_right_x_cor - self.top_left_x_cor
         self.y_length = self.bottom_right_y_cor - self.top_left_y_cor
+
+        self.all_in_cor = None
 
     def get_hwnd(self):
         return self.hwnd
@@ -241,21 +242,22 @@ class Table:
         pyautogui.screenshot(raw_screenshot_str)
         time.sleep(SLEEP_TIME_AFTER_SCREENSHOT)
 
-        croped_screenshot_str = "./pictures/Running/" + self.short_name + "_" + str(self.curr_hand_num) + "_croped.png"
-        im = cv2.imread(raw_screenshot_str)
+        im = cv2.imread(raw_screenshot_str, 0)
         im = im[self.top_left_y_cor:self.bottom_right_y_cor, self.top_left_x_cor:self.bottom_right_x_cor]
-        cv2.imwrite(croped_screenshot_str, im)
         time.sleep(SLEEP_TIME_AFTER_SCREENSHOT)
 
         os.remove(raw_screenshot_str)
+        time.sleep(0.1)                         # TODO: change to const
+
+        self.screen_shot = im[:]
 
     def is_my_turn(self):
         if not self.waiting_for_my_turn:
             return False
+
         self.processing_idle = False
         self.table_screen_shot()
-        croped_screenshot_str = "./pictures/Running/" + self.short_name + "_" + str(self.curr_hand_num) + "_croped.png"
-        table_croped_screenshot = cv2.imread(croped_screenshot_str, 0)
+        table_croped_screenshot = self.screen_shot
         my_turn_state_image = table_croped_screenshot[int(self.y_length * CROP_ALLIN_RELATIVE_Y_COR):, int(self.x_length * CROP_ALLIN_RELATIVE_X_COR):]
 
         my_turn_score = compare_photos_cards(my_turn_state_image, my_turn_image)
@@ -284,8 +286,7 @@ class Table:
 
         while True:
             self.table_screen_shot()
-            croped_screenshot_str = "./pictures/Running/" + self.short_name + "_" + str(self.curr_hand_num) + "_croped.png"
-            table_croped_screenshot = cv2.imread(croped_screenshot_str, 0)
+            table_croped_screenshot = self.screen_shot
 
             result = cv2.matchTemplate(dealer_button_image, table_croped_screenshot, photo_discovering_method)
 
@@ -310,11 +311,8 @@ class Table:
             validatee_button_location = self.curr_dealer_location
 
         if not last_dealer_location == self.curr_dealer_location:
-            self.update_new_hand()
-            new_croped_screenshot_str = "./pictures/Running/" + self.short_name + "_" + str(self.curr_hand_num) + "_croped.png"
-            if os.path.exists(new_croped_screenshot_str):
-                os.remove(new_croped_screenshot_str)
-            os.rename(croped_screenshot_str, new_croped_screenshot_str)
+            #self.update_new_hand()
+            self.processing_idle = True
             return True
 
         self.processing_idle = True
@@ -322,18 +320,20 @@ class Table:
 
     def update_new_hand(self):
         self.waiting_for_my_turn = True
+        self.acted = False
         self.curr_hand_num += 1
         self.curr_action = Action.UnDecided
         self.previous_action = -1
 
     def find_blinds_locations(self):       # FIXME: deal with no showdown and as a result 'blind' appear in the middle
 
+        self.processing_idle = False
+
         validate_bb_location = -10
         validate_sb_location = -10
 
         while True:
-            croped_screenshot_str = "./pictures/Running/" + self.short_name + "_" + str(self.curr_hand_num) + "_croped.png"
-            table_croped_screenshot = cv2.imread(croped_screenshot_str, 0)
+            table_croped_screenshot = self.screen_shot
 
             result = cv2.matchTemplate(small_blind_image, table_croped_screenshot, photo_discovering_method)
 
@@ -378,16 +378,11 @@ class Table:
             validate_sb_location = self.curr_small_blind_location
             validate_bb_location = self.curr_big_blind_location
 
-            """
-            if not self.curr_big_blind_location == self.curr_small_blind_location:
-                if not self.curr_big_blind_location == last_bb_location:
-                    if not self.curr_small_blind_location == last_sb_location:
-                        break
-            """
-
             self.table_screen_shot()
 
-    def figure_table_structure(self):       # TODO: need more verification
+        self.processing_idle = True
+
+    def figure_table_structure(self):
 
         for location in Location:
             self.curr_location_position_mapping[location] = -10
@@ -431,22 +426,25 @@ class Table:
             else:
                 assert False, "-E- impossible table structure"
 
-    def read_cards(self):       # TODO:finish and remove redundant parts
+    def read_cards(self):
+        self.processing_idle = False
+
         self.click_on_cards()
-        time.sleep(1.0)     # TODO: convert to const time
+        time.sleep(1.0)                         # TODO: convert to const time
         self.table_screen_shot()
 
-        croped_screenshot_str = "./pictures/Running/" + self.short_name + "_" + str(self.curr_hand_num) + "_croped.png"
-        im = cv2.imread(croped_screenshot_str, 0)
+        im = self.screen_shot
 
         left_card_im = im[CARD_LEFT_Y_COR:CARD_LEFT_Y_COR + CARD_LEN_Y, CARD_LEFT_X_COR:CARD_LEFT_X_COR + CARD_LEN_X]
         right_card_im = im[CARD_RIGHT_Y_COR:CARD_RIGHT_Y_COR + CARD_LEN_Y, CARD_RIGHT_X_COR:CARD_RIGHT_X_COR + CARD_LEN_X]
 
-        time.sleep(0.1)         # TODO: convert to const time
-        self.click_on_cards()   # TODO: convert to click on close cards
+        time.sleep(0.1)                         # TODO: convert to const time
+        self.click_on_cards()                   # TODO: convert to click on close cards
 
         self.card_a = parse_card(left_card_im)
         self.card_b = parse_card(right_card_im)
+
+        self.processing_idle = True
 
     def click_on_cards(self):
         pyautogui.click(self.top_left_x_cor + 400, self.top_left_y_cor + 500)   # TODO: convert to consts
@@ -463,8 +461,7 @@ class Table:
         validate_actions = -10
         while True:
             self.table_screen_shot()
-            croped_screenshot_str = "./pictures/Running/" + self.short_name + "_" + str(self.curr_hand_num) + "_croped.png"
-            table_croped_screenshot = cv2.imread(croped_screenshot_str, 0)
+            table_croped_screenshot = self.screen_shot
 
             result = cv2.matchTemplate(all_in_text_image, table_croped_screenshot, photo_discovering_method)
 
@@ -511,9 +508,11 @@ class Table:
                 break
             validate_actions = self.previous_action
 
+        self.all_in_cor = coordinates[:]
         self.processing_idle = True
 
     def act(self):
+        self.processing_idle = False
         action = get_action(self.curr_location_position_mapping[Location.Bottom], self.previous_action, self.card_a, self.card_b)
         if action == Action.AllIn:
             self.click_on_allin()
@@ -522,9 +521,23 @@ class Table:
         else:
             assert False, "-E- impossible act"
         self.curr_action = action
+        self.acted = True
+        self.processing_idle = True
 
     def record_hand(self):
         pass
+
+    def get_all_in_cor(self):
+        return self.all_in_cor
+
+    def get_screen_shot(self):
+        return self.screen_shot
+
+    def get_short_name(self):
+        return self.short_name
+
+    def get_is_acted(self):
+        return self.acted
 
     def __str__(self):
         table_str = "="*50+"\n"
@@ -570,14 +583,6 @@ def squeeze_table_name(table_name):
     splited = table_name.split()
     squeezed_name += splited[0]+"_"+splited[1]+"_"+splited[2]
     return squeezed_name
-
-
-def compare_photos(im_a, im_b, confidence=1.0):     # TODO: see if can combine both functions
-    res = im_a - im_b
-    res_sum = (sum(sum(res != 0)))
-    len_x = int(im_a.shape[1])
-    len_y = int(im_a.shape[0])
-    return res_sum/(len_x*len_y) <= 1.0 - confidence
 
 
 def find_shape(im_shape):
@@ -768,31 +773,34 @@ aof_tables_list = find_running_tables_window()
 running_tables = set_running_tables(aof_tables_list)
 
 
-idx = 0
 while True:
-    for table in running_tables:
-        if table.is_table_visible():
+    try:
+        for table in running_tables:
+            if table.is_table_visible():
 
-            if table.find_button_location():        # find botton location return boolean for the question is it a new hand?
-                #print("delear moved")
-                table.find_blinds_locations()
-                #print("found blinds")
-                table.figure_table_structure()
-                #print("found structure")
-                table.read_cards()
-                #print("read cards")
+                if table.find_button_location():
+                    if not table.get_is_acted():         # was in BB and all fold
+                        print(table)
+                    table.update_new_hand()
+                    table.find_blinds_locations()
+                    table.figure_table_structure()
+                    table.read_cards()
 
-            if table.is_my_turn():
-                idx = 0
-                #print("My turn")
-                table.read_previous_actions()
-                #print("read action")
-                table.act()
-                print(table)
+                if table.is_my_turn():
+                    table.read_previous_actions()
+                    table.act()
+                    print(table)
 
-            idx += 1
+            while not Table.processing_idle:
+                pass
 
-        while not Table.processing_idle:
-            print("not idle")
-            pass
+            time.sleep(0.1)
+
+    except Exception as e:
+        print("="*50+"\n"+"="*10+"Caught Exception:")
+        print(e)
+        print(table)
+        print(table.get_all_in_cor())
+        cv2.imwrite("./pictures\problematic cases/" + table.get_short_name() + "_crush.png", table.get_screen_shot())
+        exit()
 
