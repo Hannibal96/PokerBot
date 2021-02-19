@@ -106,47 +106,90 @@ suit_switcher = {
     "Spade.png": Suits.Spade,
 }
 
-CUTOFF_OPEN_UNSUIT = [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 3, 7]  # 30
-CUTOFF_OPEN_SUIT =   [1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 4, 5]  # 30
+ranges_switcher = {
+    "5 suit"    : [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 2],
+    "5 unsuit"  : [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 3],
 
-DEALER_OPEN_UNSUIT = [1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 4, 5]  # 35
-DEALER_OPEN_SUIT =   [1, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 7, 1]  # 35
+    "10 suit"    : [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 2, 4],
+    "10 unsuit"  : [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 5],
 
-DEALER_DEFEND_UNSUIT = [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 5]  # 10
-DEALER_DEFEND_SUIT =   [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 2, 4]  # 10
+    "15 suit"    : [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 3, 6],
+    "15 unsuit"  : [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 2, 4],
 
-SMALLBLIND_OPEN_UNSUIT = [1, 0, 0, 0, 0, 0, 0, 1, 1, 2, 6, 1, 1]  # 60   <- FROM 50%
-SMALLBLIND_OPEN_SUIT =   [1, 0, 0, 1, 1, 0, 1, 1, 2, 3, 1, 1, 1]  # 60
+    "20 suit"    : [0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 2, 2, 8],
+    "20 unsuit"  : [0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 3, 5],
 
-SMALLBLIND_DEFEND_CUTOFF_UNSUIT = [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 2, 4]  # 15
-SMALLBLIND_DEFEND_CUTOFF_SUIT =   [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 3, 6]  # 15
+    "25 suit"    : [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 2, 3, 7],
+    "25 unsuit"  : [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 3, 7],
 
-SMALLBLIND_DEFEND_DEALER_UNSUIT = [0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 3, 5]  # 20
-SMALLBLIND_DEFEND_DEALER_SUIT =   [0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 2, 2, 8]  # 20
+    "30 suit"    : [1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 4, 5],
+    "30 unsuit"  : [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 3, 7],
 
-SMALLBLIND_DEFEND_TWO_UNSUIT = [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 2, 3]  # 15  <- from 10 per 2
-SMALLBLIND_DEFEND_TWO_SUIT =   [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 2, 2, 5]  # 15
+    "35 suit"    : [1, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 7, 1],
+    "35 unsuit"  : [1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 4, 5],
 
-BIGBLIND_DEFEND_CUTOFF_UNSUIT = [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 3, 7]  # 25  <- from 25
-BIGBLIND_DEFEND_CUTOFF_SUIT =   [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 2, 3, 7]  # 25
+    "40 suit"    : [1, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 5, 1],
+    "40 unsuit"  : [1, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 5, 3],
 
-BIGBLIND_DEFEND_DEALER_UNSUIT = [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 3, 7]  # 25
-BIGBLIND_DEFEND_DEALER_SUIT =   [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 2, 3, 7]  # 25
+    "45 suit"    : [1, 0, 0, 0, 0, 0, 0, 1, 1, 2, 6, 1, 1],
+    "45 unsuit"  : [1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 2, 7, 1],
 
-BIGBLIND_DEFEND_SMALLBLIND_UNSUIT = [1, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 5, 3]  # 40  <- from 35
-BIGBLIND_DEFEND_SMALLBLIND_SUIT =   [1, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 5, 1]  # 40  <-
+    "50 suit"    : [1, 0, 0, 0, 0, 0, 1, 1, 1, 3, 4, 1, 1],
+    "50 unsuit"  : [1, 0, 0, 0, 0, 0, 0, 0, 1, 2, 4, 4, 1],
 
-BIGBLIND_DEFEND_TWO_CUTOFF_DEALER_UNSUIT = [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 3]  # 10 per 2
-BIGBLIND_DEFEND_TWO_CUTOFF_DEALER_SUIT =   [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 2, 4]  # 10 per 2
+    "55 suit"    : [1, 0, 0, 0, 1, 0, 1, 1, 1, 4, 2, 1, 1],
+    "55 unsuit"  : [1, 0, 0, 0, 0, 0, 0, 0, 2, 2, 4, 3, 1],
 
-BIGBLIND_DEFEND_TWO_CUTOFF_SMALLBLIND_UNSUIT = [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 3]  # 10
-BIGBLIND_DEFEND_TWO_CUTOFF_SMALLBLIND_SUIT =   [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 2, 4]  # 10
+    "60 suit"    : [1, 0, 0, 1, 1, 0, 1, 1, 2, 3, 1, 1, 1],
+    "60 unsuit"  : [1, 0, 0, 0, 0, 0, 0, 1, 1, 2, 6, 1, 1],
 
-BIGBLIND_DEFEND_TWO_SMALLBLIND_DEALER_UNSUIT = [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 2, 3]  # 15 per 2
-BIGBLIND_DEFEND_TWO_SMALLBLIND_DEALER_SUIT =   [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 2, 2, 5]  # 15
+    "70 suit"    : [1, 0, 1, 1, 1, 0, 1, 2, 2, 1, 1, 1, 1],
+    "70 unsuit"  : [1, 0, 0, 0, 0, 1, 0, 1, 2, 3, 3, 1, 1],
 
-BIGBLIND_DEFEND_THREE_UNSUIT = [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 2]  # 5             TODO: TRANSFER TO TOP 10 PERCENT PER 2 PLAYERS
-BIGBLIND_DEFEND_THREE_SUIT =   [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 3]  # 5
+}
+
+
+CUTOFF_OPEN_UNSUIT = ranges_switcher["25 unsuit"]
+CUTOFF_OPEN_SUIT =   ranges_switcher["25 suit"]
+
+DEALER_OPEN_UNSUIT = ranges_switcher["30 unsuit"]
+DEALER_OPEN_SUIT =   ranges_switcher["30 suit"]
+
+DEALER_DEFEND_UNSUIT = ranges_switcher["5 unsuit"]
+DEALER_DEFEND_SUIT =   ranges_switcher["5 suit"]
+
+SMALLBLIND_OPEN_UNSUIT = ranges_switcher["55 unsuit"]
+SMALLBLIND_OPEN_SUIT =   ranges_switcher["55 suit"]
+
+SMALLBLIND_DEFEND_CUTOFF_UNSUIT = ranges_switcher["10 unsuit"]
+SMALLBLIND_DEFEND_CUTOFF_SUIT =   ranges_switcher["10 suit"]
+
+SMALLBLIND_DEFEND_DEALER_UNSUIT = ranges_switcher["15 unsuit"]
+SMALLBLIND_DEFEND_DEALER_SUIT =   ranges_switcher["15 suit"]
+
+SMALLBLIND_DEFEND_TWO_UNSUIT = ranges_switcher["5 unsuit"]
+SMALLBLIND_DEFEND_TWO_SUIT =   ranges_switcher["5 unsuit"]
+
+BIGBLIND_DEFEND_CUTOFF_UNSUIT = ranges_switcher["15 unsuit"]
+BIGBLIND_DEFEND_CUTOFF_SUIT =   ranges_switcher["15 suit"]
+
+BIGBLIND_DEFEND_DEALER_UNSUIT = ranges_switcher["20 unsuit"]
+BIGBLIND_DEFEND_DEALER_SUIT =   ranges_switcher["20 suit"]
+
+BIGBLIND_DEFEND_SMALLBLIND_UNSUIT = ranges_switcher["35 unsuit"]
+BIGBLIND_DEFEND_SMALLBLIND_SUIT =   ranges_switcher["35 suit"]
+
+BIGBLIND_DEFEND_TWO_CUTOFF_DEALER_UNSUIT = ranges_switcher["5 unsuit"]
+BIGBLIND_DEFEND_TWO_CUTOFF_DEALER_SUIT =   ranges_switcher["5 suit"]
+
+BIGBLIND_DEFEND_TWO_CUTOFF_SMALLBLIND_UNSUIT = ranges_switcher["5 unsuit"]
+BIGBLIND_DEFEND_TWO_CUTOFF_SMALLBLIND_SUIT =   ranges_switcher["5 suit"]
+
+BIGBLIND_DEFEND_TWO_SMALLBLIND_DEALER_UNSUIT = ranges_switcher["5 unsuit"]
+BIGBLIND_DEFEND_TWO_SMALLBLIND_DEALER_SUIT =   ranges_switcher["5 suit"]
+
+BIGBLIND_DEFEND_THREE_UNSUIT = ranges_switcher["5 unsuit"]
+BIGBLIND_DEFEND_THREE_SUIT =   ranges_switcher["5 suit"]
 
 
 photo_discovering_method = cv2.TM_SQDIFF_NORMED
@@ -278,7 +321,7 @@ class Table:
             self.processing_idle = True
             return False
 
-    def find_button_location(self): # FIXME: also check how to prevent too many screenshots, consider put all the last screen shot variable as part of the object instead of loading every time
+    def find_button_location(self):
         self.processing_idle = False
 
         validatee_button_location = -10
