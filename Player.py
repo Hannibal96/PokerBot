@@ -120,38 +120,38 @@ ranges_switcher = {
     "20 unsuit"  : [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 6],
 
     "25 suit"    : [1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 2, 8],
-    "25 unsuit"  : [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 8],
+    "25 unsuit"  : [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 7],
 
     "30 suit"    : [1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 4, 5],
-    "30 unsuit"  : [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 3, 8],
+    "30 unsuit"  : [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 9],
 
-    "35 suit"    : [1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 6, 2],
+    "35 suit"    : [1, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 6, 2],
     "35 unsuit"  : [1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 2, 8],
 
-    "40 suit"    : [1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 2, 5, 1],
+    "40 suit"    : [1, 0, 0, 0, 1, 0, 1, 1, 0, 1, 3, 4, 1],
     "40 unsuit"  : [1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 2, 7],
 
-    "45 suit"    : [1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 3, 3, 1],
+    "45 suit"    : [1, 0, 0, 1, 0, 1, 1, 0, 1, 2, 2, 3, 1],
     "45 unsuit"  : [1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 4, 5],
 
-    "50 suit"    : [1, 0, 0, 2, 0, 1, 0, 1, 0, 2, 3, 2, 1],
+    "50 suit"    : [1, 0, 0, 1, 1, 0, 1, 1, 0, 3, 2, 2, 1],
     "50 unsuit"  : [1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 5, 4],
 
-    "55 suit"    : [1, 0, 0, 2, 0, 1, 1, 0, 1, 2, 3, 1, 1],
+    "55 suit"    : [1, 0, 0, 2, 0, 1, 0, 1, 1, 3, 2, 1, 1],
     "55 unsuit"  : [1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 5, 3],
 
     "60 suit"    : [1, 0, 1, 1, 1, 0, 1, 0, 2, 2, 2, 1, 1],
-    "60 unsuit"  : [1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 6, 2],
+    "60 unsuit"  : [1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 6, 2],
 
-    "65 suit"    : [1, 0, 1, 1, 1, 1, 0, 1, 2, 2, 1, 1, 1],
-    "65 unsuit"  : [1, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 6, 1],
+    "65 suit"    : [1, 0, 1, 1, 1, 0, 1, 1, 2, 2, 1, 1, 1],
+    "65 unsuit"  : [1, 0, 0, 0, 1, 0, 1, 1, 0, 1, 2, 4, 2],
 
-    "70 suit"    : [1, 0, 1, 2, 0, 1, 1, 1, 2, 1, 1, 1, 1],
-    "70 unsuit"  : [1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 3, 4, 1],
+    "70 suit"    : [1, 0, 1, 2, 0, 1, 0, 2, 2, 1, 1, 1, 1],
+    "70 unsuit"  : [1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 3, 4, 1],
 
 }
 
-
+"""
 CUTOFF_OPEN_UNSUIT = ranges_switcher["25 unsuit"]
 CUTOFF_OPEN_SUIT =   ranges_switcher["25 suit"]
 
@@ -193,7 +193,49 @@ BIGBLIND_DEFEND_TWO_SMALLBLIND_DEALER_SUIT =   ranges_switcher["5 suit"]
 
 BIGBLIND_DEFEND_THREE_UNSUIT = ranges_switcher["5 unsuit"]
 BIGBLIND_DEFEND_THREE_SUIT =   ranges_switcher["5 suit"]
+"""
 
+CUTOFF_OPEN_UNSUIT = ranges_switcher["30 unsuit"]
+CUTOFF_OPEN_SUIT =   ranges_switcher["30 suit"]
+
+DEALER_OPEN_UNSUIT = ranges_switcher["35 unsuit"]
+DEALER_OPEN_SUIT =   ranges_switcher["35 suit"]
+
+DEALER_DEFEND_UNSUIT = ranges_switcher["10 unsuit"]
+DEALER_DEFEND_SUIT =   ranges_switcher["10 suit"]
+
+SMALLBLIND_OPEN_UNSUIT = ranges_switcher["55 unsuit"]
+SMALLBLIND_OPEN_SUIT =   ranges_switcher["55 suit"]
+
+SMALLBLIND_DEFEND_CUTOFF_UNSUIT = ranges_switcher["15 unsuit"]
+SMALLBLIND_DEFEND_CUTOFF_SUIT =   ranges_switcher["15 suit"]
+
+SMALLBLIND_DEFEND_DEALER_UNSUIT = ranges_switcher["20 unsuit"]
+SMALLBLIND_DEFEND_DEALER_SUIT =   ranges_switcher["20 suit"]
+
+SMALLBLIND_DEFEND_TWO_UNSUIT = ranges_switcher["15 unsuit"]
+SMALLBLIND_DEFEND_TWO_SUIT =   ranges_switcher["15 suit"]
+
+BIGBLIND_DEFEND_CUTOFF_UNSUIT = ranges_switcher["25 unsuit"]
+BIGBLIND_DEFEND_CUTOFF_SUIT =   ranges_switcher["25 suit"]
+
+BIGBLIND_DEFEND_DEALER_UNSUIT = ranges_switcher["25 unsuit"]
+BIGBLIND_DEFEND_DEALER_SUIT =   ranges_switcher["25 suit"]
+
+BIGBLIND_DEFEND_SMALLBLIND_UNSUIT = ranges_switcher["40 unsuit"]
+BIGBLIND_DEFEND_SMALLBLIND_SUIT =   ranges_switcher["40 suit"]
+
+BIGBLIND_DEFEND_TWO_CUTOFF_DEALER_UNSUIT = ranges_switcher["15 unsuit"]
+BIGBLIND_DEFEND_TWO_CUTOFF_DEALER_SUIT =   ranges_switcher["15 suit"]
+
+BIGBLIND_DEFEND_TWO_CUTOFF_SMALLBLIND_UNSUIT = ranges_switcher["10 unsuit"]
+BIGBLIND_DEFEND_TWO_CUTOFF_SMALLBLIND_SUIT =   ranges_switcher["10 suit"]
+
+BIGBLIND_DEFEND_TWO_SMALLBLIND_DEALER_UNSUIT = ranges_switcher["20 unsuit"]
+BIGBLIND_DEFEND_TWO_SMALLBLIND_DEALER_SUIT =   ranges_switcher["20 suit"]
+
+BIGBLIND_DEFEND_THREE_UNSUIT = ranges_switcher["15 unsuit"]
+BIGBLIND_DEFEND_THREE_SUIT =   ranges_switcher["15 suit"]
 
 photo_discovering_method = cv2.TM_SQDIFF_NORMED
 
@@ -606,7 +648,7 @@ class Table:
 
 
 def find_running_tables_window():
-    def tables_collector(hwnd, tables_list, sub_string="AoF"):
+    def tables_collector(hwnd, tables_list, sub_string="AFH"):
         if sub_string in win32gui.GetWindowText(hwnd):
             tables_list.append(hwnd)
 
